@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.nav-section-start{
+  width: 100%;
+}
+nav{
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+.nav-link{
+    font-family: Trebuchet , Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar-dark .navbar-nav .active .nav-link:hover{
+    color: #6f84dad7;
+    text-shadow: 2px 2px #292828c5;
+    transition-duration: 0.3s;
+    font-size: 20px;
+    transition: ease-in-out 0.5s;
+}
+/* ============================ 1st-section start ========================= */
+
+.first-section-1 {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  }
+
+  .first-section-1 h2 {
+    font-size: 32px;
+  }
+  .first-section-1 a {
+    text-decoration: none;
+  }
+  
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: -90px;
+  }
+  .card {
+    background-color: transparent !important;
+    flex-direction: column;
+    perspective: 1000px;
+    height: auto;
+    box-shadow: 20px 20px 20px rgba(36, 36, 37, 0.553);
+  }
+  .card:hover{
+    box-shadow: none;
+    transition: ease-in 0.2s;
+  }
+  .card:hover .card-front {
+    transform: rotateY(-180deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .card:hover .card-back {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  .card:hover .card-back-content {
+    animation: translate 1s ease-in-out;
+  }
+  .card-front {
+    transition: all 500ms ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.1), 0 0 10px rgba(51, 51, 51, 0.1);
+    overflow: hidden;
+    height: 100%;
+    background-color:  #f2f2f2bf;
+  }
+  .card-front h2{
+    color: #2c1186;
+    margin-top: 20px;
+  }
+  .card-front h3{
+    margin-top: 10px;
+  }
+  .card-front img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-back {
+    position: absolute;
+    height: 100%;
+    padding: 20px;
+    background: #e7e4e4;
+    transform: rotateY(180deg);
+    transition: all 500ms ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.1), 0 0 10px rgba(51, 51, 51, 0.1);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .card-back img{
+    width: 30%;
+    border-radius: 100%;
+  }
+  .card-back h2{
+    margin-left: 0px;
+  }
+  .card-back-content {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #c2b0b0;
+    font-weight: 700;
+    background: hsl(222, 66%, 50%);
+    padding: 16px;
+    transition: all 300ms ease-in-out;
+    border-radius: 8px;
+  }
+  .button:hover,
+  .button:focus {
+    background: hsl(222, 66%, 45%);
+  }
+  
+  .button:active {
+    background: hsl(222, 66%, 40%);
+  }
+
+
+/* ================================================== 2nd section start =============================================== */
+
+.second-section{
+  width: 100%;
+  height: auto;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.card-body{
+  background-color:  #f2f2f2bf;
+  border-radius: 18px;
+}
+#second-div-card h2{
+  color: #2c1186ec;
+  padding: 50px 0px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; 
+  
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#223fa6de 88%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.overlay p {
+  font-size: 1.5rem;
+	margin-top: 10px;
+	color: #000000;
+  background-color: #f9f9eef5;
+	text-decoration: none;
+  font-weight: 400;
+  border-radius: 20px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.card-body:hover .overlay{
+  height: 100%;
+}
+
+/* responsive */
+  
+@media (max-width: 1000px){
+  .navbar a img{
+    width: 100px;
+    height: auto;
+  }
+  .first-section-1{
+    width: 100%;
+    height: 100%;
+  }
+  .first-section-1 h2{
+    font-size: 28px;
+  }
+  .first-section-1 h3{
+    font-size: 20px;
+  }
+  .first-section-1 h5{
+    font-size: 20px;
+  }
+  .first-section-1 p{
+    font-size: 15px;
+  }
+  .card-front img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .img img{
+      width: 100%;
+      height: 100%;
+  }
+  .second-section h2{
+      text-decoration: transparent;
+      font-size: 15px;
+      padding: 80px 0px 0px 0px;
+  }
+  .second-section h1{
+    text-decoration: transparent;
+    font-size: 13px;
+    padding: 80px 0px 0px 0px;
+  }
+  .overlay p{
+    font-size: 10px;
+    color: #fff;
+  }
+  .third-section h3, h2{
+    font-size: 25px;
+  }
+  .text-1 h2{
+    font-size: 20px;
+  }
+  .forth-section h4{
+    font-size: 15px;
+  }
+  .fifth-section h1{
+    font-size: 25px;
+  }
+  .fifth-section h3{
+    font-size: 15px;
+  }
+  .fifth-section .button{
+    font-size: 8px;
+  }
+  .sixth-section li{
+    font-size: 10px;
+  }
+  .seventh-section a{
+    font-size: 10px;
+  }
+  .seventh-section h2{
+    font-size: 20px;
+  }
+  .seventh-section h5{
+    font-size: 13px;
+  }
+  .scroll-section h3{
+    font-size: 15px;
+  }
+  #main-section h4{
+    font-size: 15px;
+  }
+  #main-section h1{
+    font-size: 25px;
+  }
+  .about-sec-1 h3{
+    font-size: 15px;
+  }
+  .forth-section h1{
+    font-size: 25px;
+  }
+  .forth-section h2{
+    font-size: 18px;
+  }
+  .forth-section h3{
+    font-size: 15px;
+  }
+  .forth-section p{
+    font-size: 10px;
+  }
+  .forth-section .frth-sec h1{
+    font-size: 20px;
+  }
+  .forth-section li{
+    font-size: 13px;
+  }
+  .forth-section .overlay-2 a{
+    font-size: 9px;
+    color: #000;
+  }
+  .forth-section-1 h4{
+    font-size: 15px;
+  }
+  .last-section-1 h1{
+    font-size: 25px;
+  }
+  .last-section-1 h2{
+    font-size: 20px;
+  }
+  .last-section-1 h3{
+    font-size: 15px;
+  }
+  .last-section-1 p{
+    font-size: 10px;
+  }
+  .last-section-1 .frth-sec h1{
+    font-size: 20px;
+  }
+  .last-section-1 li{
+    font-size: 13px;
+  }
+  .first-section-3 td{
+    font-size: 10px;
+  }
+  .placement-section-1 td{
+    font-size: 10px;
+  }
+  .pg-footer img{
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 750px){
+  .img img{
+      width: 100%;
+      height: 100%;
+  }
+  .second-section h2{
+      text-decoration: transparent;
+      font-size: 15px;
+      padding: 40px 0px 0px 0px;
+  }
+  .overlay{
+    font-size: 5px;
+  }
+  .forth-section h4{
+    font-size: 10px;
+  }
+  .placement-section-1 td{
+    font-size: 8px;
+  }
+}
+@media (max-width: 430px){
+  .img-4 img{
+    width: 200%;
+    height: 100%;
+  }
+  .second-section h2{
+    text-decoration: transparent;
+    font-size: 15px;
+    padding: 30px 0px 0px 0px;
+  }
+  .third-section h3, h2{
+    font-size: 15px;
+  }
+  .text-1 h2{
+    font-size: 20px;
+  }
+  .first-section-3 td{
+    font-size: 7px;
+  }
+  .placement-section-1 td{
+    font-size: 4px;
+  }
+  .forth-section-1 h4{
+    font-size: 10px;
+  }
+}
+
+/* ================================================== 2nd section end =============================================== */
+/* ================================================== 3rd section start =============================================== */
+
+.marketing-section{
+  width: 100%;
+  height: auto;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.third-section{
+  width: 100%;
+  height: auto;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: -7px;
+}
+
+.text-1{
+  border: 2px solid #000;
+  border: transparent;
+  background-color:  #f2f2f2bf;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.495);
+}
+.text-1 h2{
+  color: #2c1186;
+}
+.overlay-2 {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#000000af 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.overlay-2 a {
+  font-size: 1.5rem;
+	margin-top: 10px;
+	text-decoration: none;
+  font-weight: 400;
+	background: #e7e4e4;
+  border-radius: 20px;
+	text-align: center;
+	padding: 5px 15px;
+  cursor: pointer;
+}
+.card-body:hover .overlay-2{
+  height: 100%;
+}
+
+
+/* ================================================== 3rd section end =============================================== */
+
+/* ================================================== 4th section start =============================================== */
+
+.forth-section{
+  width: 100%;
+  height: auto;
+  background-image: url('https://wallpapercave.com/wp/wp4889244.jpg');
+  background-size: 100% 100%;
+}
+.forth-section-1{
+  width: 100%;
+  height: auto;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+}
+
+/* ================================================== 4th section end =============================================== */
+
+/* ================================================== 5th section start =============================================== */
+
+.fifth-section{
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.studyclap.com/img/institute/college/original/47612/aip-greater-noida-d4f921debd.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-top: 5px solid #00000070;
+  border-bottom: 5px solid #00000070;
+}
+.buttons{
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================== 5th section end =============================================== */
+/* ================================================== 6th section start =============================================== */
+.py-5 {
+  padding-bottom: 0px !important;
+}
+.sixth-section{
+  height: auto;
+  background-image: url('stacked-waves-haikei.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* ================================================== 6th section end =============================================== */
+
+/* ========================================== footer section start ============================== */
+.pg-footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+    background-color: #2c1186;
+    color: #fff;
+}
+.footer-wave-svg {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+}
+.footer-wave-path {
+    fill: #fffff2;
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+}
+
+.footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+.footer-menu {
+    margin-top: 30px;
+}
+
+.footer-menu-name {
+    color: #fffff2;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.footer-menu-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+.footer-menu-list li {
+    margin-top: 5px;
+}
+
+.footer-call-to-action-description {
+    color: #fffff2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer-call-to-action-button:hover {
+    background-color: #fffff2;
+    color: #00bef0;
+}
+.button:last-of-type {
+    margin-right: 0;
+}
+.footer-call-to-action-button {
+    background-color: #027b9a;
+    border-radius: 21px;
+    color: #fffff2;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+.footer-call-to-action {
+    margin-top: 30px;
+}
+.footer-call-to-action-title {
+    color: #fffff2;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.footer-call-to-action-link-wrapper {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-call-to-action-link-wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social-links {
+    bottom: 0;
+    height: 54px;
+    position: absolute;
+    right: 0;
+    width: 236px;
+}
+
+.footer-social-amoeba-svg {
+    height: 54px;
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 236px;
+}
+
+.footer-social-amoeba-path {
+    fill: #027b9a;
+}
+
+.footer-social-link.linkedin {
+    height: 26px;
+    left: 3px;
+    top: 11px;
+    width: 26px;
+}
+
+.footer-social-link {
+    display: block;
+    padding: 10px;
+    position: absolute;
+}
+
+.hidden-link-text {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    top: 50%;
+}
+
+.footer-social-icon-svg {
+    display: block;
+}
+
+.footer-social-icon-path {
+    fill: #fffff2;
+    transition: fill .2s;
+}
+
+.footer-social-link.twitter {
+    height: 28px;
+    left: 62px;
+    top: 3px;
+    width: 28px;
+}
+
+.footer-social-link.youtube {
+    height: 24px;
+    left: 123px;
+    top: 12px;
+    width: 24px;
+}
+
+.footer-social-link.github {
+    height: 34px;
+    left: 172px;
+    top: 7px;
+    width: 34px;
+}
+
+.footer-copyright {
+    background-color: #027b9a;
+    color: #fff;
+    padding: 15px 30px;
+  text-align: center;
+}
+
+.footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footer-copyright-text {
+  color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-copyright-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ========================================== footer section end ============================== */
+
+
+
+/* About Page  */
+
+
+
+#main-section{
+  background-image: url('https://wallpapercave.com/wp/wp7907749.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.last-section-1{
+  background-image: url('https://wallpapercave.com/wp/wp7907749.jpg'); 
+  background-size: 100%;
+}
+.last-section-1 .card-body{
+  height: auto;
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+/* faculty page  */
+
+
+
+.first-section-3{
+  width: 100%;
+  height: auto;
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.jpg');
+  background-size: 100% 100%;
+}
+
+.placement-section-1{
+  height: auto;
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.jpg');
+  background-size: 100%;
+}
+
+.index-frt-sec{
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.jpg');
+  background-size: 100%;
+  color: #fff;
+}
+
+
+
+
+
+/* responsive page  */
+
+
+
+@media (min-width:320px) and (max-width:479px)  {
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+   .part-4 img{
+    width: 100%;
+    height: 100%;
+   }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+}
+
+@media (min-width: 760px) {
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 450px;
+      position: relative;
+  }
+
+  .footer-wave-svg {
+      height: 50px;
+  }
+
+  .footer-content-column {
+      width: 24.99%;
+  }
+}
+@media (min-width: 568px) {
+}
+
+
+  @keyframes translate {
+    0% {
+      transform: translateX(-12px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .cards-wrapper {
+      grid-template-columns: auto;
+      width: auto;
+    }
+  }
+
+/* ========================================== home page responsive =================================== */
